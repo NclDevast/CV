@@ -1,0 +1,25 @@
+:root{
+    --primary-bg-dark: #250240;
+    --secondary-bg-light: #047f88;
+    --secondary-bg-dark: #035960;
+}
+
+.primary-dark{
+    background-color: var(--secondary-bg-dark);
+    color: aliceblue;
+}
+
+.primary-light{
+    background-color: var(--secondary-bg-light);
+    color: aliceblue;
+}
+.btn-main{
+    background-color: var(--secondary-bg-light);
+    color: aliceblue;
+    transition: all 0.5s ease-in;
+}
+
+.btn-main:hover{
+    background-color: var(--secondary-bg-dark);
+    transform: translateY(-1px);
+}
