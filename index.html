@@ -1,38 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santiago Gallardo</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <meta name="description" content="Portafolio de Santiago José Gallardo Vega, estudiante de Ingeniería en Tecnologías de la Información.">
+    <title>Santiago Gallardo | Portafolio</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-md navbar-light primary-light">
-        <a class="navbar-brand ps-2" href="#">Inicio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarCollapseContent" aria-controls="navBarCollapseContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse d-flex align-items-center justify-content-center" id="navBarCollapseContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="#sobre-mi" class="nav-link h-100 btn-main">Sobre mí</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#proyectos" class="nav-link h-100 btn-main">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contacto" class="nav-link h-100 btn-main">Contacto</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark primary-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">SGV<span class="brand-dot">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarCollapseContent" aria-controls="navBarCollapseContent" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBarCollapseContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                    <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-
     </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+    <main>
+        <header class="hero-section d-flex align-items-center" id="inicio">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 text-center reveal">
+                        <img src="./src/Thumbnail.jpg" alt="Fotografía de Santiago José Gallardo Vega" class="profile-photo rounded-circle">
+                        <p class="eyebrow mt-4 mb-2">Hola, soy</p>
+                        <h1 class="display-5 fw-bold">Santiago José<br>Gallardo Vega</h1>
+                        <p class="hero-role">Estudiante de Ingeniería en Tecnologías de la Información</p>
+                        <p class="text-secondary">Aficionado en todo, maestro en nada.</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+                            <a class="btn btn-accent" href="#proyectos">Ver proyectos <i class="bi bi-arrow-down-right ms-1"></i></a>
+                            <a class="btn btn-outline-light" href="#contacto">Contáctame</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 reveal" id="sobre-mi">
+                        <article class="about-card">
+                            <p class="eyebrow">Un poco sobre mí</p>
+                            <h2 class="section-title">No siempre fue sobre ingeniería.</h2>
+                            <p class="text-secondary">Siempre me he descrito como un todólogo; en parte por necesidad, pero siempre por <span class="highlight">curiosidad</span>. Me he inmiscuido en un poco de cosas en mi vida: arte, matemáticas, docencia, administración y más.</p>
+                            <p class="text-secondary mb-4">Fuera de la tecnología, hay dos pasiones que me acompañan:</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge skill-tag"><i class="bi bi-music-note-beamed me-1"></i>Arte y música</span>
+                                <span class="badge skill-tag"><i class="bi bi-egg-fried me-1"></i>Cocina</span>
+                                <span class="badge skill-tag"><i class="bi bi-lightbulb me-1"></i>Aprender algo nuevo</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section-padding projects-section" id="proyectos">
+            <div class="container">
+                <div class="section-heading text-center reveal">
+                    <p class="eyebrow">Lo que he creado</p>
+                    <h2 class="section-title">Proyectos</h2>
+                    <p class="text-secondary">Una selección de trabajos. Próximamente, más detalles.</p>
+                </div>
+                <div class="row g-4 mt-3">
+                    <div class="col-12 col-md-4 reveal">
+                        <article class="card project-card h-100">
+                            <div class="project-image" role="img" aria-label="Espacio reservado para imagen del proyecto"><i class="bi bi-image"></i></div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="project-number">01 / PROYECTO</span>
+                                <h3 class="card-title h5 mt-2">Nombre del proyecto</h3>
+                                <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                                <a href="#contacto" class="project-link mt-auto">Conocer más <i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4 reveal">
+                        <article class="card project-card h-100">
+                            <div class="project-image" role="img" aria-label="Espacio reservado para imagen del proyecto"><i class="bi bi-image"></i></div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="project-number">02 / PROYECTO</span>
+                                <h3 class="card-title h5 mt-2">Nombre del proyecto</h3>
+                                <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                <a href="#contacto" class="project-link mt-auto">Conocer más <i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4 reveal">
+                        <article class="card project-card h-100">
+                            <div class="project-image" role="img" aria-label="Espacio reservado para imagen del proyecto"><i class="bi bi-image"></i></div>
+                            <div class="card-body d-flex flex-column">
+                                <span class="project-number">03 / PROYECTO</span>
+                                <h3 class="card-title h5 mt-2">Nombre del proyecto</h3>
+                                <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                                <a href="#contacto" class="project-link mt-auto">Conocer más <i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding skills-section" id="habilidades">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 reveal">
+                        <p class="eyebrow">En constante aprendizaje</p>
+                        <h2 class="section-title">Habilidades técnicas</h2>
+                        <p class="text-secondary">Estas son algunas de las tecnologías y áreas que estoy explorando. Los niveles son referenciales y puedo actualizarlos conforme avance.</p>
+                    </div>
+                    <div class="col-lg-7 reveal">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <div class="skill-progress">
+                                    <div class="d-flex justify-content-between mb-2"><span><i class="bi bi-filetype-html me-2"></i>HTML</span><span>100%</span></div>
+                                    <div class="progress" role="progressbar" aria-label="Dominio de HTML" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width: 100%">100%</div></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="skill-progress">
+                                    <div class="d-flex justify-content-between mb-2"><span><i class="bi bi-filetype-css me-2"></i>CSS</span><span>100%</span></div>
+                                    <div class="progress" role="progressbar" aria-label="Dominio de CSS" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width: 100%">100%</div></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="skill-progress">
+                                    <div class="d-flex justify-content-between mb-2"><span><i class="bi bi-braces me-2"></i>JavaScript</span><span>100%</span></div>
+                                    <div class="progress" role="progressbar" aria-label="Dominio de JavaScript" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width: 100%">100%</div></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="skill-progress">
+                                    <div class="d-flex justify-content-between mb-2"><span><i class="bi bi-filetype-php me-2"></i>PHP</span><span>100%</span></div>
+                                    <div class="progress" role="progressbar" aria-label="Dominio de PHP" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width: 100%">100%</div></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="skill-progress">
+                                    <div class="d-flex justify-content-between mb-2"><span><i class="bi bi-database me-2"></i>SQL</span><span>100%</span></div>
+                                    <div class="progress" role="progressbar" aria-label="Dominio de SQL" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width: 100%">100%</div></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="skill-progress">
+                                    <div class="d-flex justify-content-between mb-2"><span><i class="bi bi-code-slash me-2"></i>C++</span><span>100%</span></div>
+                                    <div class="progress" role="progressbar" aria-label="Dominio de C++" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width: 100%">100%</div></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="skill-progress">
+                                    <div class="d-flex justify-content-between mb-2"><span><i class="bi bi-terminal me-2"></i>Python</span><span>100%</span></div>
+                                    <div class="progress" role="progressbar" aria-label="Dominio de Python" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width: 100%">100%</div></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="skill-progress">
+                                    <div class="d-flex justify-content-between mb-2"><span><i class="bi bi-diagram-3 me-2"></i>Topología de redes</span><span>100%</span></div>
+                                    <div class="progress" role="progressbar" aria-label="Dominio de topología de redes" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width: 100%">100%</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume-section section-padding text-center">
+            <div class="container reveal">
+                <p class="eyebrow">¿Quieres saber más?</p>
+                <h2 class="section-title">Conoce mi trayectoria</h2>
+                <p class="text-secondary mb-4">Imprime esta página o elige “Guardar como PDF” en las opciones de impresión.</p>
+                <button class="btn btn-accent btn-lg" type="button" id="print-page">
+                    <i class="bi bi-file-earmark-pdf me-2"></i>Imprimir o guardar como PDF
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section section-padding" id="contacto">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 reveal">
+                    <p class="eyebrow">Hablemos</p>
+                    <h2 class="section-title">¿Tienes una idea?</h2>
+                    <p class="text-secondary">Déjame un mensaje o encuéntrame en mis redes.</p>
+                    <div class="social-links d-flex gap-3 mt-4">
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (reemplaza con tu perfil)"><i class="bi bi-linkedin"></i><span>LinkedIn</span></a>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub (reemplaza con tu perfil)"><i class="bi bi-github"></i><span>GitHub</span></a>
+                        <a href="mailto:correo@ejemplo.com" aria-label="Enviar correo electrónico"><i class="bi bi-envelope"></i><span>Correo</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 reveal">
+                    <form id="contact-form" class="contact-form">
+                        <div class="mb-3">
+                            <label for="contact-name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="contact-email" name="email" placeholder="tu@correo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="contact-message" name="message" rows="3" placeholder="Cuéntame sobre tu idea"></textarea>
+                        </div>
+                        <button class="btn btn-accent" type="submit">Preparar correo <i class="bi bi-send ms-1"></i></button>
+                        <p class="small text-secondary mt-2 mb-0"></p>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between gap-2">
+                <span>© <span id="current-year"></span> Santiago Gallardo</span>
+                <a href="#inicio">Volver al inicio <i class="bi bi-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./scripts/app.js"></script>
 </body>
 </html>
